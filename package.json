@@ -1,0 +1,24 @@
+{
+  "name": "spacetraders-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "generate-sdk": "openapi-generator-cli generate -i https://raw.githubusercontent.com/SpaceTradersAPI/api-docs/main/reference/SpaceTraders.json -o src/sdk -g typescript-fetch"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.6.0",
+    "@types/page": "^1.11.6",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "@b9g/crank": "^0.5.4",
+    "localforage": "^1.10.0",
+    "page": "^1.11.6",
+    "terminal.css": "^0.7.2"
+  }
+}
